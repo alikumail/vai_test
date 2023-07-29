@@ -1,0 +1,139 @@
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #0089ff;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #1ac905, #8BC34A, #03A9F4, #0089ff);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #1ac905, #8BC34A, #03A9F4, #0089ff);
+  color: white;
+  transition: 0.3s;
+  }
+  
+  .gradient-custom-2:hover {
+  
+  background: -webkit-linear-gradient(to right, #0089ff, #03A9F4,#8BC34A, #1ac905);
+  background: linear-gradient(to right,#0089ff, #03A9F4,#8BC34A, #1ac905);
+  }
+
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+
+  /* Dashboard */
+  body {
+    font-size: .875rem;
+  }
+  
+  .feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  }
+  
+  /*
+   * Sidebar
+   */
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    /* rtl:raw:
+    right: 0;
+    */
+    bottom: 0;
+    /* rtl:remove */
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+ 
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: white;
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: white;
+  }
+  
+  
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  
+  /*
+   * Navbar
+   */
+  
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+
+  }
+  
+  .dashborad-logo {
+    width: 40px;
+}  
+
+/* custom */
+.toggale-b {
+  color: white;
+  margin-right: 10px;
+}
+.left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggale-b:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    background: -webkit-linear-gradient(to right,#0089ff, #1ac9057a);;
+    background: linear-gradient(to right,#0089ff, #1ac9057a);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+  }
+  .sidebar.show {
+    transform: translateX(0%);
+  }
+  .sidebar .nav-link {
+     font-size: 1.2rem;
+     border-bottom: solid 1px lightgray;
+}
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: white;
+  }
+
+}
+
+
